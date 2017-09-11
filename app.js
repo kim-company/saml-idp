@@ -190,7 +190,7 @@ function processArgs(options) {
         description: 'Enables signing of responses',
         required: false,
         boolean: true,
-        default: false,
+        default: true,
         alias: 'signResponse'
       },
       configFile: {
@@ -270,8 +270,8 @@ function _runServer(argv) {
     acsUrl:                 argv.acsUrl,
     RelayState:             argv.relayState,
     allowRequestAcsUrl:     !argv.disableRequestAcsUrl,
-    digestAlgorithm:        'sha256',
-    signatureAlgorithm:     'rsa-sha256',
+    digestAlgorithm:        'sha1',
+    signatureAlgorithm:     'rsa-sha1',
     signResponse:           argv.signResponse,
     encryptAssertion:       argv.encryptAssertion,
     encryptionAlgorithm:    'http://www.w3.org/2001/04/xmlenc#aes256-cbc',

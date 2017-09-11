@@ -3,26 +3,41 @@
  * User Profile
  */
 var profile = {
-  userName: 'saml.jackson@example.com',
-  nameIdFormat: 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+  userName: 'MF_Dige',
+  nameIdFormat: 'urn:oasis:names:tc:SAML:2.0:nameid-format:persistent',
+  access_readappend: ['2014DE05SFOP013:21.08esz04.10.1.', '2014DE05SFOP013:21.08bsz01.01.0.'],
+  access_readonly: '',
+  form_filter : ['21.08bsz01.01.0.', '21.09.bsz01.01.0.']/*,
   firstName: 'Saml',
   lastName: 'Jackson',
   displayName: 'saml jackson',
   email: 'saml.jackson@example.com',
   mobilePhone: '+1-415-555-5141',
-  groups: 'Simple IdP Users, West Coast Users, Cloud Users'
+  groups: 'Simple IdP Users, West Coast Users, Cloud Users'*/
 }
 
 /**
  * SAML Attribute Metadata
  */
 var metadata = [{
-  id: "firstName",
-  optional: false,
-  displayName: 'First Name',
-  description: 'The given name of the user',
-  multiValue: false
+  id: "access_readappend",
+  optional: true,
+  displayName: 'RA',
+  description: 'Readappend Access',
+  multiValue: true
 }, {
+  id: "access_readonly",
+  optional: true,
+  displayName: 'RO',
+  description: 'Readonly Access',
+  multiValue: true
+}, {
+  id: "form_filter",
+  optional: true,
+  displayName: 'Filter',
+  description: 'Form Filter',
+  multiValue: true
+}/*, {
   id: "lastName",
   optional: false,
   displayName: 'Last Name',
@@ -58,7 +73,7 @@ var metadata = [{
   displayName: 'User Type',
   description: 'The type of user',
   options: ['Admin', 'Editor', 'Commenter']
-}];
+}*/];
 
 module.exports = {
   user: profile,
