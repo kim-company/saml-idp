@@ -5,7 +5,8 @@
 var profile = {
   userName: 'MF_Dige',
   nameIdFormat: 'urn:oasis:names:tc:SAML:2.0:nameid-format:persistent',
-  access_readappend: ['2014DE05SFOP013:21.08esz04.10.1.', '2014DE05SFOP013:21.08bsz01.01.0.'],
+  access_readappend: ['2014DE05SFOP013:21.08qsz01.01.0.',
+                      '2014DE05SFOP013:22.09asz05.01.3.'],
   access_readonly: '',
   form_filter : ['21.08bsz01.01.0.', '21.09.bsz01.01.0.']/*,
   firstName: 'Saml',
