@@ -5,7 +5,6 @@ RUN npm install
 
 EXPOSE 7000 7000
 
-# ADD ./node_modules node_modules
 ADD ./lib lib
 ADD ./views views
 ADD ./app.js app.js
