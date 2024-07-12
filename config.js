@@ -3,11 +3,12 @@
  * User Profile
  */
 var profile = {
-  userName: 'MF_Dige',
+  userName: 'KIM_Dev',
   nameIdFormat: 'urn:oasis:names:tc:SAML:2.0:nameid-format:persistent',
   access_readappend: ['2014DE05SFOP013:21.08qsz01.01.0.', 'A'],
   access_readonly:   ['2014DE05SFOP013:22.09asz05.01.3.', 'B'],
-  form_filter : ['21.08bsz01.01.0.', '21.09.bsz01.01.0.', '21.08qsz01.01.0.', '22.09asz05.01.3.', '15.05asz12.01.2.', '12.03dsz04.06.1.', '21.08bsz01.06.2.', '21.08esz04.10.2.']/*,
+  form_filter : ['21.08bsz01.01.0.', '21.09.bsz01.01.0.', '21.08qsz01.01.0.', '22.09asz05.01.3.', '15.05asz12.01.2.', '12.03dsz04.06.1.', '21.08bsz01.06.2.', '21.08esz04.10.2.'],
+  ressort: "IB | Prüfer: Dev",/*,
   firstName: 'Saml',
   lastName: 'Jackson',
   displayName: 'saml jackson',
@@ -25,6 +26,12 @@ var metadata = [{
   displayName: 'RA',
   description: 'Readappend Access',
   multiValue: true
+},{
+  id: "ressort",
+  optional: true,
+  displayName: 'Ressort',
+  description: 'Ressort',
+  multiValue: false
 }, {
   id: "access_readonly",
   optional: true,
