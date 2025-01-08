@@ -7,7 +7,8 @@ var profile = {
   nameIdFormat: 'urn:oasis:names:tc:SAML:2.0:nameid-format:persistent',
   access_readappend: ['2014DE05SFOP013:21.08qsz01.01.0.', 'A'],
   access_readonly:   ['2014DE05SFOP013:22.09asz05.01.3.', 'B'],
-  ressort: "IB | Prüfer PB - Dev",/*,
+  ressort: "IB",
+  referat: "Prüfer PB - Dev"/*,
   firstName: 'Saml',
   lastName: 'Jackson',
   displayName: 'saml jackson',
@@ -25,19 +26,25 @@ var metadata = [{
   displayName: 'RA',
   description: 'Readappend Access',
   multiValue: true
-},{
-  id: "ressort",
-  optional: true,
-  displayName: 'Ressort',
-  description: 'Ressort',
-  multiValue: false
 }, {
   id: "access_readonly",
   optional: true,
   displayName: 'RO',
   description: 'Readonly Access',
   multiValue: true
-},/*, {
+}, {
+  id: "ressort",
+  optional: true,
+  displayName: 'Ressort',
+  description: 'Ressort',
+  multiValue: false
+}, {
+  id: "referat",
+  optional: true,
+  displayName: 'Referat',
+  description: 'Referat',
+  multiValue: false
+}/*, {
   id: "lastName",
   optional: false,
   displayName: 'Last Name',
