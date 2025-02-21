@@ -2,7 +2,7 @@
   "name": "saml-idp",
   "private": true,
   "dependencies": {
-    "bootstrap-tagsinput": "0.8.0",
+    "bootstrap-tagsinput": "https://github.com/bootstrap-tagsinput/bootstrap-tagsinput.git",
     "jquery": "3.2.1",
     "bootstrap": "3.3.7",
     "fontawesome": "4.7.0",
